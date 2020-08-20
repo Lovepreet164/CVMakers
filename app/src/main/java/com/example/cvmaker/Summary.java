@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,7 +24,7 @@ public class Summary extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
+    private String Button;
     private String mParam2;
 
     public Summary() {
@@ -46,19 +49,28 @@ public class Summary extends Fragment {
         return fragment;
     }
 
-    @Override
+   /* @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_summary, container, false);
+        View v = inflater.inflate(R.layout.fragment_summary, container, false);
+        TextView textViewSum = v.findViewById(R.id.textViewSum);
+        TextView textViewS = v.findViewById(R.id.textViewS);
+
+        EditText summaryHint = v.findViewById(R.id.summaryHint);
+
+        Button button5 = v.findViewById(R.id.button5);
+
+
+        return v;
     }
 }

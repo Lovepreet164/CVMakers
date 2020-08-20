@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +60,12 @@ public class Finish extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_finish, container, false);
+        View v = inflater.inflate(R.layout.fragment_finish, container, false);
+        TextView textViewF1 = v.findViewById(R.id.textViewF1);
+        TextView textViewF2 = v.findViewById(R.id.textViewF2);
+
+
+
+        return v;
     }
 }

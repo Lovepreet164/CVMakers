@@ -1,6 +1,7 @@
 package com.example.cvmaker;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -24,6 +25,11 @@ public class HomePage extends AppCompatActivity {
         TabItem tabAdditional = findViewById(R.id.additional);
         TabItem tabFinish = findViewById(R.id.finish);
         final ViewPager viewPager = findViewById(R.id.viewpager);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        fragmentTransaction.add(R.id.tablayout,new Contact());
+        fragmentTransaction.commit();
 
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(),
                tabLayout.getTabCount());

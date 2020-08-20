@@ -7,6 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Switch;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,8 +27,8 @@ public class Education extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private String Switch;
+    private String Button;
 
     public Education() {
         // Required empty public constructor
@@ -46,19 +52,39 @@ public class Education extends Fragment {
         return fragment;
     }
 
-    @Override
+  /*  @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_education, container, false);
+        View v =  inflater.inflate(R.layout.fragment_education, container, false);
+
+        TextView textviewt1 = v.findViewById(R.id.textViewT1);
+        TextView textviewt2 = v.findViewById(R.id.textViewT2);
+        TextView textviewt3 = v.findViewById(R.id.textViewT3);
+        TextView textviewt4 = v.findViewById(R.id.textViewT4);
+        TextView textviewtW2 = v.findViewById(R.id.textViewW2);
+
+        EditText school =v.findViewById(R.id.school);
+        EditText dates = v.findViewById(R.id.dates);
+        EditText edittextTo = v.findViewById(R.id.edittextTo);
+
+        Switch switch1 = v.findViewById(R.id.switch1);
+        Button button3 = v.findViewById(R.id.button3);
+
+
+
+
+        return  v;
     }
+
+
 }

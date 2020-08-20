@@ -69,18 +69,18 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewT2" />
 
         <TextView
-        android:id="@+id/textViewdate"
-        android:layout_width="203dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="4dp"
-        android:text="e.g. 12/2018, or Dec 2018."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dates" />
+            android:id="@+id/textViewT3"
+            android:layout_width="203dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:text="e.g. 12/2018, or Dec 2018."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dates" />
 
         <TextView
-            android:id="@+id/textViewto"
+            android:id="@+id/textViewT4"
             android:layout_width="95dp"
             android:layout_height="38dp"
             android:layout_marginTop="12dp"
@@ -90,7 +90,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.049"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewdate" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewT3" />
 
         <EditText
             android:id="@+id/edittextTo"
@@ -103,35 +103,45 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.079"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewto" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewT4" />
 
         <TextView
             android:id="@+id/textViewW2"
-            android:layout_width="358dp"
-            android:layout_height="109dp"
-            android:layout_marginTop="56dp"
+            android:layout_width="362dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="20dp"
             android:text="In areas where the date is important, you should include the month and the year for each entry. List all the dates on your resume using the same formatting. Month is an optional field."
             android:textColor="#0E0E0E"
             android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="109dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:text="Present"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edittextTo" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="197dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="206dp"
+            android:layout_height="78dp"
             android:text="Next"
+            android:textColor="#FFFDFD"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.425"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewW2"
-            app:layout_constraintVertical_bias="0.157" />
+            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

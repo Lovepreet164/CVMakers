@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,7 +25,7 @@ public class Additional extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
+    private String Button;
     private String mParam2;
 
     public Additional() {
@@ -46,19 +50,31 @@ public class Additional extends Fragment {
         return fragment;
     }
 
-    @Override
+   /* @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_additional, container, false);
+        View v = inflater.inflate(R.layout.fragment_additional, container, false);
+        TextView textViewAdd = v.findViewById(R.id.textViewAdd);
+        RadioGroup radioGroup = v.findViewById(R.id.radioGroup);
+        RadioButton radioButton = v.findViewById(R.id.radioButton);
+        RadioButton radioButton2 = v.findViewById(R.id.radioButton2);
+        RadioButton radioButton3 = v.findViewById(R.id.radioButton3);
+        RadioButton radioButton4 = v.findViewById(R.id.radioButton4);
+        RadioButton radioButton5 = v.findViewById(R.id.radioButton5);
+
+        Button button6 = v.findViewById(R.id.button6);
+
+
+        return v;
     }
 }
