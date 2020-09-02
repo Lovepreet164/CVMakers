@@ -28,7 +28,7 @@ public class HomePage extends AppCompatActivity {
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
-        fragmentTransaction.add(R.id.tablayout,new Contact());
+        fragmentTransaction.add(R.id.viewpager,new Contact());
         fragmentTransaction.commit();
 
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(),
